@@ -1,0 +1,32 @@
+"""Models package for PalmCore CMMS backend."""
+
+from app.models.base import Base  # noqa: F401
+from app.models.company import Company  # noqa: F401
+from app.models.user import User  # noqa: F401
+from app.models.role import Role  # noqa: F401
+from app.models.permission import Permission  # noqa: F401
+from app.models.refresh_token import RefreshToken  # noqa: F401
+from app.models.plant import Plant  # noqa: F401
+from app.models.area import Area  # noqa: F401
+from app.models.equipment_category import EquipmentCategory  # noqa: F401
+from app.models.equipment import Equipment  # noqa: F401
+from app.models.equipment_history import EquipmentHistory  # noqa: F401
+from app.models.attachment import Attachment  # noqa: F401
+from app.models.technician import Technician  # noqa: F401
+from app.models.work_order import WorkOrder  # noqa: F401
+from app.models.work_order_task import WorkOrderTask  # noqa: F401
+from app.models.work_order_part import WorkOrderPart  # noqa: F401
+from app.models.work_order_attachment import WorkOrderAttachment  # noqa: F401
+from app.models.work_order_downtime import WorkOrderDowntime  # noqa: F401
+from app.models.work_order_cost import WorkOrderCost  # noqa: F401
+from app.models.maintenance_plan import MaintenancePlan  # noqa: F401
+from app.models.maintenance_schedule import MaintenanceSchedule  # noqa: F401
+from app.models.equipment_hourmeter import EquipmentHourmeter  # noqa: F401
+from app.models.maintenance_backlog import MaintenanceBacklog  # noqa: F401
+from app.models.technician import Technician  # noqa: F401
+from app.models.work_order import WorkOrder  # noqa: F401
+from app.models.work_order_task import WorkOrderTask  # noqa: F401
+from app.models.work_order_part import WorkOrderPart  # noqa: F401
+from app.models.work_order_attachment import WorkOrderAttachment  # noqa: F401
+from app.models.work_order_downtime import WorkOrderDowntime  # noqa: F401
+from app.models.work_order_cost import WorkOrderCost  # noqa: F401

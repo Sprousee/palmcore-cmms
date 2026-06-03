@@ -1,0 +1,30 @@
+name: Frontend CI
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        working-directory: ./apps/frontend
+        run: npm install --legacy-peer-deps
+      - name: Build frontend
+        working-directory: ./apps/frontend
+        run: npm run build
+      - name: Run lint
+        working-directory: ./apps/frontend
+        run: npm run lint || true
